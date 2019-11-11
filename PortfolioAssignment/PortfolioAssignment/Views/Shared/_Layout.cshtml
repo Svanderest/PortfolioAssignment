@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PortfolioAssignment</title>
+    <title>@ViewData["Title"] - Sebastian van der Est</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
-<body>
+<body class="bg-info">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -26,25 +26,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">PortfolioAssignment</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Sebastian van der Est</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Resume">Resume</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a></li>
+                    <li><a href="https://github.com/Svanderest" target="_blank">Github</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
+    </nav>    
 
     <div class="container body-content">
-        @RenderBody()
-        <hr />
+        @RenderBody()        
         <footer>
-            <p>&copy; 2019 - PortfolioAssignment</p>
+            <p>&copy; 2019 - Sebastian van der Est</p>
         </footer>
     </div>
 
